@@ -5,7 +5,7 @@ function find() {
   const [k, l] = useState();
   const { query } = useRouter();
   async function fun(e) {
-    let re = await fetch("http://localhost:3000/api/hello", {
+    let re = await fetch("https://next2-five.vercel.app/api/hello", {
       method: "POST",
       body: JSON.stringify(e),
       headers: {
